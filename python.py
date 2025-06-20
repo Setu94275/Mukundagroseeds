@@ -28,7 +28,10 @@ def main():
 
 if __name__ == "__main__":
     main()
+ menu ={'PENDI' : 150 per 250ml
 
+        'THAIFLOW' : 120 per 1000ml 
+} 
 
 st.title ("MUKUND AGRO SEEDS")
 
@@ -40,7 +43,7 @@ sname = st.text_input("DISTRICT")
 classdeta = st.selectbox("HOW MANY YEARS TO CLOSE FARMING :", ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"])
 
 
-bname = st.text_input("where are you buy pestiside ")
+
 
 button = st.button("SAVE")
 if button : 
@@ -57,5 +60,5 @@ if button :
                  FARMER : {classdeta}
 
 
-                PESTICIDE : {bname}""")
+                                    """)
     
