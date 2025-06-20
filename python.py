@@ -28,10 +28,7 @@ def main():
 
 if __name__ == "__main__":
     main()
- menu ={'PENDI' : 150 per 250ml
 
-        'THAIFLOW' : 120 per 1000ml 
-} 
 
 st.title ("MUKUND AGRO SEEDS")
 
@@ -61,4 +58,8 @@ if button :
 
 
                                     """)
+menu = {"pendi" : 150
+        "thaioflow" : 350
+        "setu" : 250 }
+
     
