@@ -1,6 +1,5 @@
 import  streamlit as st
 
-import streamlit as st
 
 # Dummy user database
 users = {
@@ -58,26 +57,6 @@ if button :
 
 
                                     """)
-# products_app.py
-import streamlit as st
-
-st.set_page_config(page_title="Pesticide Products", layout="wide")
-
-products = [
-    {"name": "PENDI", "price": 250, "image_url": ""},
-    {"name": "THAIOFLOW", "price": 180, "image_url": "https://example.com/b.jpg"},
-    {"name": "REJENTS", "price": 300, "image_url": "https://example.com/c.jpg"},
-]
-
-st.title("🌱 Pesticide Products")
-
-cols = st.columns(3)
-for col, p in zip(cols, products):
-    with col:
-        st.image(p["image_url"], width=200)
-        st.subheader(p["name"])
-        st.caption(f"Price: ₹{p['price']}")
-        st.button("Add to cart", key=p["add to cart"])
 
 
 import streamlit as st
