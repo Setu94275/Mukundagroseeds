@@ -58,8 +58,5 @@ if button :
 
 
                                     """)
-menu = {"pendi" : 150
-        "thaioflow" : 350
-        "setu" : 250 }
 
     
