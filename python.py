@@ -1,5 +1,35 @@
 import  streamlit as st
 
+import streamlit as st
+
+# Dummy user database
+users = {
+    "admin": "admin123",
+    "user1": "pass1",
+    "user2": "pass2"
+}
+
+def main():
+    st.title("🔐 Login Page")
+
+    st.sidebar.header("User Login")
+
+    # Login form
+    username = st.sidebar.text_input("Username")
+    password = st.sidebar.text_input("Password", type='password')
+
+    if st.sidebar.button("Login"):
+        if username in users and users[username] == password:
+            st.success(f"Welcome {username} 👋")
+            st.write("You are successfully logged in!")
+            # Add more content below after login
+        else:
+            st.error("Invalid username or password ❌")
+
+if __name__ == "__main__":
+    main()
+
+
 st.title ("MUKUND AGRO SEEDS")
 
 st.subheader("RANASAN")
