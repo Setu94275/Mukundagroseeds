@@ -59,4 +59,7 @@ if button :
 
                                     """)
 
-    
+    import streamlit as st
+
+st.image("https://example.com/image.jpg", caption="वेब से इमेज", use_column_width=True)
+
