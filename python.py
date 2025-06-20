@@ -83,8 +83,8 @@ for col, p in zip(cols, products):
 import streamlit as st
 
 uploaded_file = st.file_uploader("Choose an image", type=["jpg", "jpeg", "png"])
-if uploaded_file is not None: "C:\Users\Setu\Downloads\MUKUND AGRO.png"
-    st.image(uploaded_file, caption=f"Uploaded: {uploaded_file.name}")
+if uploaded_file is not None: "MUKUND AGRO.png"
+    st.image(uploaded_file, caption=f"Uploaded: {uploaded_file."C:\Users\Setu\Downloads\MUKUND AGRO.png"}")
 
 
 
