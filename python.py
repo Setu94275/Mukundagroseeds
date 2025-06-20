@@ -82,9 +82,30 @@ for col, p in zip(cols, products):
 
 import streamlit as st
 
-uploaded_file = st.file_uploader("Choose an image", type=["jpg", "jpeg", "png"])
-if uploaded_file is not None: "MUKUND AGRO.png"
-    st.image(uploaded_file, caption=f"Uploaded: {uploaded_file."MUKUND AGRO.png"}")
+# Page configuration
+st.set_page_config(page_title="Product Page", layout="centered")
+
+# Product Information
+product = {
+    "name": "Wireless Headphones",
+    "price": 59.99,
+    "description": "High-quality wireless headphones with noise cancellation and 20-hour battery life.",
+    "image_url": "https://via.placeholder.com/300x200.png?text=Wireless+Headphones"
+}
+
+# Display product image
+st.image(product["image_url"], use_column_width=True)
+
+# Display product name and price
+st.title(product["name"])
+st.subheader(f"${product['price']}")
+
+# Product description
+st.write(product["description"])
+
+# Buy Now button
+if st.button("🛒 Buy Now"):
+    st.success("Thank you for your purchase! (This is a mock action.)")
 
 
 
