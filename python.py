@@ -58,8 +58,29 @@ if button :
 
 
                                     """)
+# app.py
+from flask import Flask, render_template, jsonify
 
-    import streamlit as st
+app = Flask(__name__)
 
-st.image(""C:\Users\Setu\Downloads\MUKUND AGRO (1).jpg"", caption="वेब से इमेज", use_column_width=True)
+# सैंपल डेटा — आप इसे DB से लोड कर सकते हैं
+products = [
+    {"id": 1, "name": "Insecticide A", "price": 250, "image": "/static/img/insecticide_a.jpg"},
+    {"id": 2, "name": "Herbicide B", "price": 180, "image": "/static/img/herbicide_b.jpg"},
+    {"id": 3, "name": "Fungicide C", "price": 300, "image": "/static/img/fungicide_c.jpg"},
+]
+
+@app.route('/products')
+def get_products():
+    return jsonify(products)
+
+@app.route('/')
+def index():
+    return render_template('products.html', products=products)
+
+if __name__ == "__main__":
+    app.run(debug=True)
+
+
+
 
