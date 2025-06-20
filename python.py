@@ -64,7 +64,7 @@ import streamlit as st
 st.set_page_config(page_title="Pesticide Products", layout="wide")
 
 products = [
-    {"name": "PENDI", "price": 250, "image_url": "https://www.agrowala.com/product/herbicides/pendifix-500-ml"},
+    {"name": "PENDI", "price": 250, "image_url": ""C:\Users\Setu\Downloads\MUKUND AGRO.png""},
     {"name": "THAIOFLOW", "price": 180, "image_url": "https://example.com/b.jpg"},
     {"name": "REJENTS", "price": 300, "image_url": "https://example.com/c.jpg"},
 ]
