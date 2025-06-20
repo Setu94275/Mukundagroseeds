@@ -58,29 +58,26 @@ if button :
 
 
                                     """)
-# app.py
-from flask import Flask, render_template, jsonify
+# products_app.py
+import streamlit as st
 
-app = Flask(__name__)
+st.set_page_config(page_title="Pesticide Products", layout="wide")
 
-# सैंपल डेटा — आप इसे DB से लोड कर सकते हैं
 products = [
-    {"id": 1, "name": "Insecticide A", "price": 250, "image": "/static/img/insecticide_a.jpg"},
-    {"id": 2, "name": "Herbicide B", "price": 180, "image": "/static/img/herbicide_b.jpg"},
-    {"id": 3, "name": "Fungicide C", "price": 300, "image": "/static/img/fungicide_c.jpg"},
+    {"name": "Insecticide A", "price": 250, "image_url": "https://example.com/a.jpg"},
+    {"name": "Herbicide B", "price": 180, "image_url": "https://example.com/b.jpg"},
+    {"name": "Fungicide C", "price": 300, "image_url": "https://example.com/c.jpg"},
 ]
 
-@app.route('/products')
-def get_products():
-    return jsonify(products)
+st.title("🌱 Pesticide Products")
 
-@app.route('/')
-def index():
-    return render_template('products.html', products=products)
-
-if __name__ == "__main__":
-    app.run(debug=True)
-
+cols = st.columns(3)
+for col, p in zip(cols, products):
+    with col:
+        st.image(p["image_url"], width=200)
+        st.subheader(p["name"])
+        st.caption(f"Price: ₹{p['price']}")
+        st.button("Add to cart", key=p["name"])
 
 
 
