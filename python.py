@@ -77,14 +77,14 @@ for col, p in zip(cols, products):
         st.image(p["image_url"], width=200)
         st.subheader(p["name"])
         st.caption(f"Price: ₹{p['price']}")
-        st.button("Add to cart", key=p["add now"])
+        st.button("Add to cart", key=p["add to cart"])
 
 
 import streamlit as st
 
 uploaded_file = st.file_uploader("Choose an image", type=["jpg", "jpeg", "png"])
 if uploaded_file is not None: "MUKUND AGRO.png"
-    st.image(uploaded_file, caption=f"Uploaded: {uploaded_file."C:\Users\Setu\Downloads\MUKUND AGRO.png"}")
+    st.image(uploaded_file, caption=f"Uploaded: {uploaded_file."MUKUND AGRO.png"}")
 
 
 
