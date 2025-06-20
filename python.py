@@ -10,7 +10,7 @@ users = {
 }
 
 def main():
-    st.title("🔐 Login Page")
+  
 
     st.sidebar.header("User Login")
 
