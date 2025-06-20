@@ -61,5 +61,5 @@ if button :
 
     import streamlit as st
 
-st.image("https://example.com/image.jpg", caption="वेब से इमेज", use_column_width=True)
+st.image(""C:\Users\Setu\Downloads\MUKUND AGRO (1).jpg"", caption="वेब से इमेज", use_column_width=True)
 
