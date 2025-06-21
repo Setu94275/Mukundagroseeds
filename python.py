@@ -66,9 +66,17 @@ st.set_page_config(page_title="Product Page", layout="centered")
 
 # Product Information
 product = {
-    "name": "Wireless Headphones",
-    "price": 59.99,
-    "description": "High-quality wireless headphones with noise cancellation and 20-hour battery life.",
+    "name": "", PENDI 
+    "price": 250 ,
+    "description": "PENDI (30%EC)
+
+ USES(વપરાશ )    (નિંદામણ નાશક)
+
+(1) મગફરી , ઘઉં  , કપાસ ,સોયાબીન ,તુવેર  .
+
+(2) વાવેતર પછી 2 દિવસ અંદર  છટકાવ  માટે  જમીન માં ભેજ હોય તે જરરી છે .
+
+(4) એક પંપ (15 લીટર ) માં 80ml થી 100ml ",
     "image_url": "https://via.placeholder.com/300x200.png?text=Wireless+Headphones"
 }
 
@@ -77,7 +85,7 @@ st.image(product["image_url"], use_column_width=True)
 
 # Display product name and price
 st.title(product["name"])
-st.subheader(f"${product['price']}")
+st.subheader(f"{product['price']}")
 
 # Product description
 st.write(product["description"])
