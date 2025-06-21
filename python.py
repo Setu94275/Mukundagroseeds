@@ -68,7 +68,7 @@ st.set_page_config(page_title="Product Page", layout="centered")
 product = {
     "name": "", PENDI 
     "price": 250 ,
-    "description": "PENDI (30%EC)
+    "description": "
 
  USES(વપરાશ )    (નિંદામણ નાશક)
 
