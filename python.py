@@ -66,17 +66,11 @@ st.set_page_config(page_title="Product Page", layout="centered")
 
 # Product Information
 product = {
-    "name": "", PENDI 
+    "name": "pendi " ,
     "price": 250 ,
-    "description": "
+    "description": " BEST PRODUCTS IN INDIA
 
- USES(વપરાશ )    (નિંદામણ નાશક)
-
-(1) મગફરી , ઘઉં  , કપાસ ,સોયાબીન ,તુવેર  .
-
-(2) વાવેતર પછી 2 દિવસ અંદર  છટકાવ  માટે  જમીન માં ભેજ હોય તે જરરી છે .
-
-(4) એક પંપ (15 લીટર ) માં 80ml થી 100ml ",
+ ",
     "image_url": "https://via.placeholder.com/300x200.png?text=Wireless+Headphones"
 }
 
