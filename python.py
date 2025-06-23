@@ -59,34 +59,6 @@ if button :
                                     """)
 
 
-import streamlit as st
-
-# Page configuration
-st.set_page_config(page_title="Product Page", layout="centered")
-
-# Product Information
-product = {
-    "name": "pendi " ,
-    "price": 250 ,
-    "description": 
-
-    "image_url": "https://via.placeholder.com/300x200.png?text=Wireless+Headphones"
-}
-
-# Display product image
-st.image(product["image_url"], use_column_width=True)
-
-# Display product name and price
-st.title(product["name"])
-st.subheader(f"{product['price']}")
-
-# Product description
-st.write(product["description"])
-
-# Buy Now button
-if st.button("🛒 Buy Now"):
-    st.success("Thank you for your purchase! (This is a mock action.)")
-
 
 
 
