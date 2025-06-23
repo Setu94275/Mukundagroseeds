@@ -68,9 +68,8 @@ st.set_page_config(page_title="Product Page", layout="centered")
 product = {
     "name": "pendi " ,
     "price": 250 ,
-    "description": " BEST PRODUCTS IN INDIA
+    "description": 
 
- ",
     "image_url": "https://via.placeholder.com/300x200.png?text=Wireless+Headphones"
 }
 
