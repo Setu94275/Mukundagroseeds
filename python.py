@@ -60,9 +60,9 @@ if button :
 
 
 
- import streamlit as st
 
-    UnicodeTranslateError("https://youtube.com/@bestfactinworld?si=2A2p1ciwmXbPuUwT")
+
+    UnicodeTranslateError("https://youtube.com/@bestfactinworld")
 
     button("Button")
 
