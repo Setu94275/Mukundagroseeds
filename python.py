@@ -84,7 +84,7 @@ with col1 :
     
     
     col8,col9,col10 = st.columns(3)
-with col2 :
+with col8 :
      with st.expander("PENDI PESISIDE INSTRUCTIONS") :
       st.write("""1.PENDI (30%EC)
 
@@ -96,20 +96,20 @@ with col2 :
 
 (4) એક પંપ (15 લીટર ) માં 80ml થી 100ml  """)   
 
-with col3 :
+with col2 :
     st.header("REJENT")
     st.image("https://kissanemart.com/storage/bayer-regent-sc-insecticide-800x800.jpg",width=250)
 
-with col4  :
+with col9  :
  with st.expander("REJENT PESISIDE INSTRUCTIONS") :    
     st.write("""Regent insecticides contain fipronil, a phenylpyrazole compound known for its efficacy in controlling various difficult-to-kill pests, including:
 Early shoot borer, stem borer, leaf folder, and termites in rice
 Green leafhopper and other significant pests in sugarcane and wheat.
 Fipronil works primarily through ingestion and contact, causing toxicity by disrupting the insect's nervous system """)
 
-with col5 :
+with col3 :
     st.header("BLACK AMRUT")
     st.image("https://agribegri.com/productimage/18963318401729577015.webp",width=200)
-    with col6 :
+    with col10 :
         with st.expander("BLACK AMRUT PESISIDE INSTRUCTION") :
             st.write("""It is a mixture of essential nutrients, soluble carbon and natural growth enhancers, made from Organic and Natural Extracts, which makes it safe and eco-friendly. It improves the production of crops via acting on all stages like Plant Growth, Fruiting, Flowering & Size Improvement.""")
