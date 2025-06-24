@@ -9,7 +9,7 @@ users = {
 }
 
 def main():
-    st.button("login now")
+    
     
     
     st.sidebar.header("User Login")
