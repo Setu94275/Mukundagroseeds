@@ -84,7 +84,7 @@ with col1 :
     
     
     col8,col9,col10 = st.columns(3)
-with col4 :
+with col8 :
      with st.expander("PENDI PESISIDE INSTRUCTIONS") :
       st.write("""1.PENDI (30%EC)
 
@@ -100,7 +100,7 @@ with col2 :
     st.header("REJENT")
     st.image("https://kissanemart.com/storage/bayer-regent-sc-insecticide-800x800.jpg",width=250)
 
-with col5  :
+with col9  :
  with st.expander("REJENT PESISIDE INSTRUCTIONS") :    
     st.write("""Regent insecticides contain fipronil, a phenylpyrazole compound known for its efficacy in controlling various difficult-to-kill pests, including:
 Early shoot borer, stem borer, leaf folder, and termites in rice
