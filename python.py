@@ -9,7 +9,8 @@ users = {
 }
 
 def main():
-    st.button("login now")
+    
+
     
     
     st.sidebar.header("User Login")
@@ -33,35 +34,17 @@ if __name__ == "__main__":
 st.title ("MUKUND AGRO SEEDS")
 
 st.subheader("RANASAN")
-col4,col5 = st.columns(2)
-with col4 :
-    st.text_input("ENTER NAME HARE: ")
-
-with col5 :
-    st.text_input("VILLAGE NAME")    
-
-col6,col7 =st.columns(2)
-
-
-with col6 :
-    st.text_input("TALUKA")
-
-with col7:
+if st.button("complet your profile"):
+    st.text_input("ENTER NAME HARE:")
+    st.text_input("VILLAGE NAME") 
+    st.text_input("TALUKA") 
     st.text_input("DISTRICT")
+    st.text_input("STATE")
+    st.selectbox("(HOW MANY YEARS TO CLOSE FARMING :", ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"])
+    st.text_input("WHERE YOU BUY PESTICIDE")
+    button = st.button("SAVE")
+    st.success=(" TAHNKS FOR SHARE YOUR DITAILS")
 
-with col6 :
-    st.text_input("STATE")    
-
-
-
-classdeta = st.selectbox("HOW MANY YEARS TO CLOSE FARMING :", ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"])
-
-
-bname = st.text_input("where are you buy pestiside ")
-
-button = st.button("SAVE")
-
-st.success("Thank you for join mukund agro seeds")
    
  
 st.write("pleas select pesicide")
@@ -82,8 +65,8 @@ with col1 :
     st.header("PENDI")
     st.image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFRXQN6zeIjNntgBqXgVqeP74Aq5agpfp0pQ&s", width=200)
     
+col8,col9,col10 =st.columns(3)    
     
-    col8,col9,col10 = st.columns(3)
 with col8 :
      with st.expander("PENDI PESISIDE INSTRUCTIONS") :
       st.write("""1.PENDI (30%EC)
@@ -113,3 +96,10 @@ with col3 :
     with col10 :
         with st.expander("BLACK AMRUT PESISIDE INSTRUCTION") :
             st.write("""It is a mixture of essential nutrients, soluble carbon and natural growth enhancers, made from Organic and Natural Extracts, which makes it safe and eco-friendly. It improves the production of crops via acting on all stages like Plant Growth, Fruiting, Flowering & Size Improvement.""")
+
+            
+            
+if st.button("click now"):
+   url = "https://www.blogger.com/blog/post/edit/preview/8120710627423734129/8353132355958769146"
+   st.text_input("completed")
+   st.image("https://kissanemart.com/storage/bayer-regent-sc-insecticide-.jpg",width=500)
